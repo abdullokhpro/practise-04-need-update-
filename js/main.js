@@ -5,29 +5,6 @@ let body = document.querySelector("body");
 let darkMode = document.querySelector(".dark-mode");
 let navshrink = document.getElementById ("navshrink")
 
-$(document).ready(function () {
-    $(".owl-carousel").owlCarousel(
-        {
-            loop: true,
-            margin: 10,
-            nav: true,
-            autoplay: true,
-            autoplayTimeout: 1000,
-            autoplayHover: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                700: {
-                    items: 2
-                },
-                1200: {
-                    items: 3
-                }
-            }
-        }
-    );
-});
 
 darkMode.addEventListener("click", function(){
     body.classList.toggle("dark");
@@ -61,3 +38,27 @@ function showNavShrink(){
         navshrink.classList.remove("show-navshrink")
     }
 } 
+
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel(
+        {
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHover: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                700: {
+                    items: 2
+                },
+                1200: {
+                    items: 3
+                }
+            }
+        }
+    );
+});
