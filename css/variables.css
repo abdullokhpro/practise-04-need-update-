@@ -1,0 +1,14 @@
+:root {
+    --primary-color: rgba(2, 137, 122, 1);
+    --shrift-color: #22343D;
+    --background-color: #fff;
+    --dark-mode-color: #000;
+    --hover-color: #000;
+}
+
+.dark {
+    --shrift-color: #fff;
+    --dark-mode-color: yellow;
+    --background-color: #000;
+    --hover-color: #fff;
+}

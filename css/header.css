@@ -1,0 +1,141 @@
+.header__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    padding-top: 29px;
+    padding-bottom: 27px;
+    background-color: var(--background-color);
+    transition: 0.3s;
+}
+
+.header__nav-logo {
+    color: var(--shrift-color);
+}
+
+.show-navshrink {
+    box-shadow: 0px 0px 10px var(--primary-color);
+    padding: 20px 0;
+}
+
+.header__nav-right {
+    gap: 50px;
+}
+
+.header__nav__list {
+    gap: 40px;
+}
+
+.header__nav__link  {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--shrift-color);
+    transition: 0.3s;
+}
+
+.header__nav__link:hover {
+    color: var(--hover-color);
+}
+
+.header__nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.header__nav-buttons__signin {
+    padding: 11px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--shrift-color);
+    border: 1px solid #BCD0E5;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.header__nav-buttons__signin:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.header__nav-buttons__signup {
+    padding: 11px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #BCD0E5;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.header__nav-buttons__signup:hover {
+    background-color: transparent;
+    color: var(--shrift-color);
+}
+
+.header__nav-buttons__menu {
+    display: none;
+    border: none;
+    padding: 4px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+
+@media (max-width: 1090px) {
+    .header__nav__list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        z-index: 1000;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0px 0px 15px var(--primary-color);
+        background-color: var(--background-color);
+        transition: 0.4s;
+    }
+
+    .show-nav__list {
+        left: 0;
+    }
+
+    .header__nav-buttons__menu {
+        display: block;
+    }
+}
+
+@media (max-width: 1090px) {
+    .header__nav-buttons__signin {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+
+    .header__nav-buttons__signup {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 555px) {
+    .header__nav-buttons__signin {
+      display: none;
+    }
+
+    .header__nav-buttons__signup {
+    display: none;
+    }
+}
+
+.dark-mode {
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.dark-mode:hover {
+    transform: scale(1.1);
+}
